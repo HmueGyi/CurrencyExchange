@@ -1,0 +1,214 @@
+:root{
+    --primary: #0d6efd;
+    --secondary:#707070;
+    --light:#ffffff;
+    --dark:#000000;
+    --headerfont:50px;
+    --radius:5px;
+    --btncolor:#2cd1eeb6;
+    --lightsecondary:#a9acb1;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+#logo{
+    display: flex;
+    align-items: center;
+}
+#logo #BrandName{
+    margin-left:10px;
+}
+html, body{
+    overflow-x:hidden !important;
+}
+nav a{
+    color:  var(--dark) !important;
+}
+.navbar-brand img{
+    width:4.5rem;
+}
+.navigation{
+    position: absolute;
+    top: 0px;
+}
+.home{
+    background-image: url("../../_data/Bg-Shape.svg");
+    background-repeat: no-repeat;
+    background-position:top right;
+    background-size: 55%;
+
+}
+.second-pg{
+    background-image: url("../../_data/bg-2.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.object {
+    animation: MoveUpDown 2s linear infinite;
+    position: absolute;
+    
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 30px;
+    }
+  }
+.focusF:focus-visible{
+    outline: none;
+    box-shadow: none;
+  }
+
+.background{
+    background-color: #7e76f93d;
+}
+.rotate{
+    transform: rotate(90deg) !important;
+}
+/* .contactBg::before{
+    content: " ";
+    background-image: url("../../_data/footer-2.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+} */
+/* .contactBg{
+   
+} */
+.bg-graphic{
+    height: 494px;
+    background-image: url("../../_data/footer-11.svg"),  url("../../_data/footer-2.svg") ;
+    background-repeat: no-repeat;
+    /* background-position: bottom, left bottom; */
+    background-size: 100%;
+}
+.desktopbar{
+    position: fixed !important;
+    top: 0;
+    box-shadow: 0 0 5px #00000020;
+    background-color: #ffffff;
+    z-index: 5000;
+}
+.desktopbar nav a{
+    color: black !important;
+}
+.startbtn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+@media screen and (max-width:415px){
+    header{
+        backdrop-filter: saturate(55%) blur(10px) !important;
+        padding: 0 !important;
+        background-color: none !important;
+    }
+    .navigation{
+        background-color: none !important;
+    }
+    nav{
+        padding: 0 !important;
+    }
+    .contentBox a{
+        color: black !important;
+    }
+    .contentBox{
+        backdrop-filter: saturate(55%) blur(10px) !important;
+        animation: toShow 0.5s linear;
+    }
+    @keyframes toShow {
+        from{
+    
+            transform: translateY(-200px);
+    
+        }to{
+    
+        transform: translateY(0);
+    
+             }
+    }
+    .desktopbar{
+        padding: 0 !important;
+        backdrop-filter: saturate(55%) blur(10px) !important;
+        background-color: transparent !important;
+    }
+
+     .margin{
+         display: flex;
+         flex-direction: column-reverse;
+     }
+     .margin-top{
+        margin-top: 80px;
+     }
+    .svg-home{
+        width: 352px !important;
+        margin-bottom: 20px;
+    }
+    .bg-graphic{
+        height: 785px;
+        padding: 10px;
+        /* background-image: url(../../_data/footer-2.svg); */
+        background-color: #1e16a5;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: cover;
+    }
+    
+}
+@media screen and (width :768px){
+    header{
+        backdrop-filter: saturate(55%) blur(10px) !important;
+        padding: 0 !important;
+        background-color: none !important;
+    }
+    nav{
+        padding: 0 !important;
+    }
+    .contentBox a{
+        color: black !important;
+    }
+    .contentBox{
+        backdrop-filter: saturate(55%) blur(10px) !important;
+        animation: toShow 0.5s linear;
+    }
+    @keyframes toShow {
+        from{
+    
+            transform: translateY(-200px);
+    
+        }to{
+    
+        transform: translateY(0);
+    
+             }
+    }
+    .desktopbar{
+        padding: 0 !important;
+        backdrop-filter: saturate(55%) blur(10px) !important;
+        background-color: transparent !important;
+    }
+    .bg-graphic{
+       height: 429px;
+    padding: 0px;
+        /* background-image: url(../../_data/footer-2.svg); */
+        background-color: #1e16a5;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: cover;
+    }
+}
+/* .links{
+    background-image: url("../../_data/Bg-Shape.svg");
+} */
+.nav-link.createline{
+    border-bottom: 2px solid;}
+
+    .slick-dots li button:before {
+        width: 10px !important;
+        height: 10px !important;
+        color: none !important;
+    }
+    

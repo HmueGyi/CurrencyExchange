@@ -1,0 +1,24 @@
+:root{
+    --night-seondary: hsla(0, 0%, 100%, 0.842);
+    --night-secondary-soft: #3a3b3c;
+}
+body.darkmode{
+    background-color: #19191a;
+    transition: 0.5s;
+    
+}
+
+.darkmode #name,td,label{
+    color: var(--night-secondary);
+}
+.darkmode .line{
+    background: var(--night-seondary);
+}
+.darkmode .Brand{
+    color: var(--night-seondary);
+
+}
+.darkmode tr{
+    background-color: var(--night-secondary-soft);
+}
+.darkmode tr:hover {background-color: rgba(148, 144, 144, 0.664);};

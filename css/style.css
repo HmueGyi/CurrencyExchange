@@ -1,0 +1,107 @@
+:root{
+    --primary: #00d3ec;
+    --secondary:#707070;
+    --light:#ffffff;
+    --dark:#000000;
+    --headerfont:50px;
+    --radius:5px;
+    --btncolor:#2cd1eeb6;
+    --lightsecondary:#a9acb1;
+}
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    color: var(--secondary);
+    font-family: 'Oswald', sans-serif;
+}
+.container{
+    width: 800px;
+    margin: 100px auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.Brand{
+    /* font-size: 50px; */
+    font-size: var(--headerfont);
+    font-weight: bold;
+    margin-left: 10px;
+}
+.logo img{
+    width: 65px;
+}
+.result{
+    font-size: var(--headerfont);
+    color: var(--lightsecondary);
+}
+.line{
+    width:100%;
+    height:10px;
+    background-color: var(--secondary);
+}
+.inputValues{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+label{
+    color:var(--lightsecondary);
+}
+#box{
+    width: 135px;
+    height: 26px;
+    /* margin-top: 7px; */
+    border-radius: var(--radius);
+    /* padding: 2px; */
+    appearance: none;
+    /* padding: 7px 7px; */
+    padding-left: 19px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+.btn{
+    width: 95px;
+    height: 68px;
+    background-color: var(--primary);
+    font-size: 1em;
+    border-radius: var(--radius);
+}
+.inputB{
+    text-align: right;
+}
+.HisTable{
+    width:100%;
+    margin-top:10px;
+    text-align: center;
+}
+
+th{
+    background-color: var(--primary);
+    height: 50px;
+    border-radius: var(--radius);
+}
+.mode{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 21px;
+    right: 15px;
+    align-items: center;
+    border: 2px solid;
+    cursor: pointer;
+}
+
+tbody tr:nth-child(even){background-color: #f2f2f2;}
+tbody tr:hover {background-color: #ddd;};
