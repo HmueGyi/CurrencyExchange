@@ -1,4 +1,4 @@
-# Money Exchange Calculator Website
+# Currency Exchange Calculator
 
 ## Overview
 This is a responsive Money Exchange Calculator website that provides users with an easy way to calculate exchange rates. The website features a modern design with smooth animations, a navigation menu, and sections for Home, About, Rates, and Contact Us.
@@ -25,11 +25,11 @@ To run the project locally, follow these steps:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/HmueGyi/CurrencyExchange.git
    ```
 2. Navigate to the project folder:
    ```sh
-   cd your-repository
+   cd CurrencyExchange
    ```
 3. Open the `index.html` file in a browser.
 
